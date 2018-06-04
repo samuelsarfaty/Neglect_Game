@@ -32,11 +32,11 @@ public class FloorPiece : MonoBehaviour {
 			foreach (PipeButton button in buttons) {
 				if (button.isSelected) {
 					Instantiate (button.pipePrefab, pipeSpawnPos, Quaternion.identity);
+					hasPipe = true;
 				}
 			}
 		}
 
-		hasPipe = true;
 	}
 
 }
