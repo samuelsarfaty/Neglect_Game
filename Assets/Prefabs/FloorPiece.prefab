@@ -107,3 +107,6 @@ MonoBehaviour:
   mats:
   - {fileID: 2100000, guid: fc7960a2af4c31944b9bd6e08160c781, type: 2}
   - {fileID: 2100000, guid: 32ef23f833e14634698bc043c02af4f9, type: 2}
+  pipes:
+  - {fileID: 1311589537672252, guid: aecd28f92713d404d85c43283bafc61d, type: 2}
+  - {fileID: 1279853658647570, guid: 3029cdaf98c980548bef044aa0025541, type: 2}

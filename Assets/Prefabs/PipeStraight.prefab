@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4304359913169406}
   - component: {fileID: 64310485182129670}
+  - component: {fileID: 114497988063645454}
   m_Layer: 0
   m_Name: PipeStraight
   m_TagString: Untagged
@@ -123,3 +124,14 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 7f437ac8a1aa8424786e41a76ef16384, type: 3}
+--- !u!114 &114497988063645454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1311589537672252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22792a6dc8e3d974791ad24186a09b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
