@@ -5,15 +5,16 @@ using UnityEngine;
 public class FloorPiece : MonoBehaviour {
 
 	public Material[] mats;
-	public GameObject[] pipes;
 
 	private Renderer myMat;
 	private Vector3 pipeSpawnPos;
+	private PipeButton[] buttons;
 	private bool hasPipe;
 
 	void Awake(){
 		myMat = GetComponent<Renderer> ();
 		pipeSpawnPos = new Vector3 (transform.position.x, 2.5f, transform.position.z);
+		buttons = GameObject.FindObjectsOfType<PipeButton> ();
 		hasPipe = false;
 	}
 
@@ -28,11 +29,14 @@ public class FloorPiece : MonoBehaviour {
 
 	void OnMouseDown(){
 		if (!hasPipe) {
-			Instantiate (pipes [1], pipeSpawnPos, Quaternion.identity);
-			hasPipe = true;
-		} else {
-			print ("pipe already here");
+			foreach (PipeButton button in buttons) {
+				if (button.isSelected) {
+					Instantiate (button.pipePrefab, pipeSpawnPos, Quaternion.identity);
+				}
+			}
 		}
+
+		hasPipe = true;
 	}
 
 }

@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class PipeButton : MonoBehaviour {
 
+	public GameObject pipePrefab;
+	[HideInInspector]
+	public bool isSelected;
+
 	private GameObject selectionFrame;
 	private PipeButton[] buttons;
 
 	void Awake(){
 		selectionFrame = GetComponentInChildren<SelectionFrame> ().gameObject;
 		buttons = GameObject.FindObjectsOfType<PipeButton> ();
+		isSelected = false;
 	}
 
 	// Use this for initialization
@@ -23,9 +28,11 @@ public class PipeButton : MonoBehaviour {
 		}
 
 		selectionFrame.SetActive (true);
+		isSelected = true;
 	}
 
 	public void DeSelect(){
 		selectionFrame.gameObject.SetActive (false);
+		isSelected = false;
 	}
 }
