@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class Pipe : MonoBehaviour {
 
-	void OnMouseDown(){
-		transform.Rotate (new Vector3 (transform.rotation.x, transform.rotation.y + 90f, transform.rotation.z));
+	void OnMouseOver(){
+		if (Input.GetMouseButtonDown (0)) {
+			transform.Rotate (new Vector3 (transform.rotation.x, transform.rotation.y + 90, transform.rotation.z));
+		} else if (Input.GetMouseButtonDown (1)) {
+			Destroy (gameObject);
+		}
 	}
 }
