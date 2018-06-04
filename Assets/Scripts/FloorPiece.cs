@@ -28,7 +28,7 @@ public class FloorPiece : MonoBehaviour {
 
 	void OnMouseDown(){
 		if (!hasPipe) {
-			Instantiate (pipes [0], pipeSpawnPos, Quaternion.identity);
+			Instantiate (pipes [1], pipeSpawnPos, Quaternion.identity);
 			hasPipe = true;
 		} else {
 			print ("pipe already here");
