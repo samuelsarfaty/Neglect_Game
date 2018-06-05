@@ -11,8 +11,8 @@ public class Water : MonoBehaviour {
 		}
 
 		if (other.GetComponent<Target> ()) {
-			print ("target acquired");
-			other.GetComponent<CapsuleCollider> ().isTrigger = true;
+			other.GetComponent<Target> ().Acquire ();
+
 		}
 
 	}
