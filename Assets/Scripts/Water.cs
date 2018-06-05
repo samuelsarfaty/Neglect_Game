@@ -9,5 +9,12 @@ public class Water : MonoBehaviour {
 		if (other.GetComponent<FloorPiece>()) {
 			SceneManager.LoadScene (0);
 		}
+
+		if (other.GetComponent<Target> ()) {
+			print ("target acquired");
+			other.GetComponent<CapsuleCollider> ().isTrigger = true;
+		}
+
 	}
+
 }
