@@ -7,7 +7,9 @@ public class Water : MonoBehaviour {
 
 	void OnParticleCollision (GameObject other){
 		if (other.GetComponent<FloorPiece>()) {
-			SceneManager.LoadScene (0);
+			print ("water fell");
+			print (other.name);
+			//SceneManager.LoadScene (0);
 		}
 
 		if (other.GetComponent<Target> ()) {

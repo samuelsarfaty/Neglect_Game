@@ -24,6 +24,12 @@ public class GameManager : MonoBehaviour {
 		scoreText.text = scoreCount + " / " + targets.Length;
 	}
 
+	void Update(){
+		if (scoreCount >= targets.Length) {
+			scoreText.color = Color.yellow;
+		}
+	}
+
 
 
 }
