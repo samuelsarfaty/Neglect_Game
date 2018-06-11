@@ -6,8 +6,10 @@ public class Mill : MonoBehaviour {
 
 	public float rotationSpeed;
 	public bool isRotating;
+	public HouseMill houseMill;
 
 	private BoxCollider myCollider;
+
 
 	void Awake(){
 		isRotating = false;
@@ -18,6 +20,11 @@ public class Mill : MonoBehaviour {
 	void Update () {
 		if (isRotating) {
 			transform.Rotate (Vector3.left, rotationSpeed * Time.deltaTime);
+
+			if (!houseMill.isActivated) {
+				houseMill.Activate ();
+				houseMill.isActivated = true;
+			}
 		}
 			
 	}
@@ -26,6 +33,8 @@ public class Mill : MonoBehaviour {
 		isRotating = false;
 		transform.rotation = Quaternion.Euler (Vector3.zero);
 		myCollider.isTrigger = false;
+		houseMill.isActivated = false;
+		houseMill.DeActivate ();
 
 	}
 
