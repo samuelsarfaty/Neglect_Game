@@ -2958,45 +2958,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4686423499587968, guid: ebf228042f5895247afd87b574940c50, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198602716209835516, guid: ebf228042f5895247afd87b574940c50,
-        type: 2}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 198602716209835516, guid: ebf228042f5895247afd87b574940c50,
-        type: 2}
-      propertyPath: randomSeed
-      value: -864925979
-      objectReference: {fileID: 0}
-    - target: {fileID: 198602716209835516, guid: ebf228042f5895247afd87b574940c50,
-        type: 2}
-      propertyPath: InitialModule.maxNumParticles
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 198602716209835516, guid: ebf228042f5895247afd87b574940c50,
-        type: 2}
-      propertyPath: CollisionModule.collidesWithDynamic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198602716209835516, guid: ebf228042f5895247afd87b574940c50,
-        type: 2}
-      propertyPath: CollisionModule.quality
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198602716209835516, guid: ebf228042f5895247afd87b574940c50,
-        type: 2}
-      propertyPath: CollisionModule.radiusScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198602716209835516, guid: ebf228042f5895247afd87b574940c50,
-        type: 2}
-      propertyPath: CollisionModule.interiorCollisions
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ebf228042f5895247afd87b574940c50, type: 2}
   m_IsPrefabParent: 0

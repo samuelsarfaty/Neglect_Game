@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 198602716209835516}
   - component: {fileID: 199120606542085004}
   - component: {fileID: 114260402844262508}
+  - component: {fileID: 114280019620932058}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1864841487033700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.03, z: -5.67}
+  m_LocalPosition: {x: 12, y: 9.31, z: -5.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53,6 +54,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 682dd5985e885014b9d646b7aabce39e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114280019620932058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1864841487033700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 104f81aa98e1bd441b058b6377c03f56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hSliderValueR: 0
+  hSliderValueG: 0
+  hSliderValueB: 1
+  hSliderValueA: 1
 --- !u!198 &198602716209835516
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -108,12 +124,12 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -864925979
+  randomSeed: -1479135578
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
-      scalar: 10
+      scalar: 25
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -518,7 +534,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 1500
     size3D: 1
     rotation3D: 0
     gravityModifier:
