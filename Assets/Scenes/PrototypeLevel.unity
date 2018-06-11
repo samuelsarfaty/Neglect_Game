@@ -1737,6 +1737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c59f1cf7efec2444484f05be44cac582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myMill: {fileID: 2072228879}
 --- !u!114 &746183648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2771,7 +2772,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4879506844509694, guid: 6537a4881b77a4540a6f1fc967ea1b93, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4879506844509694, guid: 6537a4881b77a4540a6f1fc967ea1b93, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4693,6 +4694,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52ae9f901d348de43b37fdb49f1fc72b, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &2072228879 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114953032236387078, guid: 6537a4881b77a4540a6f1fc967ea1b93,
+    type: 2}
+  m_PrefabInternal: {fileID: 1072497686}
+  m_Script: {fileID: 11500000, guid: 784c41890c22640459d67f56f57007f7, type: 3}
 --- !u!1 &2086271121
 GameObject:
   m_ObjectHideFlags: 0

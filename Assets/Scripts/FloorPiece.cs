@@ -29,7 +29,7 @@ public class FloorPiece : MonoBehaviour {
 
 
 	void OnMouseDown(){
-		if (!myPipe) {
+		if (!myPipe && transform.childCount <= 0) {
 			foreach (PipeButton button in buttons) {
 				if (button.isSelected) {
 					myPipe = Instantiate (button.pipePrefab, pipeSpawnPos, Quaternion.identity);

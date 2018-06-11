@@ -9,6 +9,8 @@ public class StartButton : MonoBehaviour {
 	private bool isWaterActive;
 	private Text buttonText;
 
+	public Mill myMill;
+
 
 	void Awake(){
 		water = GameObject.FindObjectOfType<Water> ();
@@ -27,6 +29,9 @@ public class StartButton : MonoBehaviour {
 			StartWater ();
 		} else {
 			StopWater ();
+			if (myMill) {
+				myMill.ResetMill ();
+			}
 		}
 	}
 	

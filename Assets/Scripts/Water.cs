@@ -16,6 +16,7 @@ public class Water : MonoBehaviour {
 			if (!myMill.isRotating) {
 				myMill.isRotating = true;
 				myMill.GetComponent<BoxCollider> ().isTrigger = true;
+
 			}
 
 		}
