@@ -9,11 +9,14 @@ public class Water : MonoBehaviour {
 		if (other.GetComponent<FloorPiece>()) {
 			print ("water fell");
 			print (other.name);
-			//SceneManager.LoadScene (0);
 		}
 
-		if (other.GetComponent<Target> ()) {
-			other.GetComponent<Target> ().Acquire ();
+		if (other.GetComponent<Mill> ()) {
+			Mill myMill = other.GetComponent<Mill> ();
+			if (!myMill.isRotating) {
+				myMill.isRotating = true;
+				myMill.GetComponent<BoxCollider> ().isTrigger = true;
+			}
 
 		}
 
