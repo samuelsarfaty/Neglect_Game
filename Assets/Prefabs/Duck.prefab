@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33157511546897094}
   - component: {fileID: 23789720316027378}
   - component: {fileID: 54252771971756006}
-  - component: {fileID: 65364979863401928}
+  - component: {fileID: 135571487278151850}
   m_Layer: 0
   m_Name: Duck
   m_TagString: Untagged
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1806676344748298}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 11.076986, y: 3.692764, z: 29.562988}
+  m_LocalPosition: {x: 11.076986, y: 15, z: 29.562988}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,15 +97,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65364979863401928
-BoxCollider:
+--- !u!135 &135571487278151850
+SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1806676344748298}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ecebeebd3eda7674394c45c84e87d286, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08015047, y: 0.034669366, z: 0.0725095}
+  m_Radius: 0.040075235
   m_Center: {x: 0.0069325846, y: 0, z: 0.0018271111}

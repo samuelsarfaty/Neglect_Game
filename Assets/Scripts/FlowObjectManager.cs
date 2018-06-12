@@ -12,14 +12,19 @@ public class FlowObjectManager : MonoBehaviour {
 
 	void Start(){
 		for (int i = 0; i < spawnNumber; i++) {
+
 			Vector3 spawnPos = new Vector3 (transform.position.x, transform.position.y + i, transform.position.z);
 			GameObject obj = Instantiate (myObject, spawnPos, Quaternion.identity);
 			obj.transform.parent = this.transform;
 			objectsList.Add (obj);
 			obj.gameObject.SetActive (false);
 
-			print (objectsList.Count);
+		}
+	}
 
+	public void Spawn(){
+		foreach (GameObject obj in objectsList) {
+			obj.SetActive (true);
 		}
 	}
 
