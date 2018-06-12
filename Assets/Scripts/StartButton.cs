@@ -20,7 +20,6 @@ public class StartButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//water.gameObject.SetActive (false);
 		StopWater();
 	}
 
