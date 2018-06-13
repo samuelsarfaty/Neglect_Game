@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class StartButton : MonoBehaviour {
 
+	public Mill myMill;
+	public string startText;
+	public string stopText;
+
 	private Water water;
 	private bool isWaterActive;
 	private Text buttonText;
-
-	public Mill myMill;
 
 
 	void Awake(){
@@ -20,6 +22,7 @@ public class StartButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		buttonText.text = startText;
 		StopWater();
 	}
 
@@ -37,13 +40,13 @@ public class StartButton : MonoBehaviour {
 	void StartWater(){
 		water.gameObject.SetActive (true);
 		isWaterActive = true;
-		buttonText.text = "Stop";
+		buttonText.text = stopText;
 	}
 
 	void StopWater(){
 		water.gameObject.SetActive (false);
 		isWaterActive = false;
-		buttonText.text = "Begin!";
+		buttonText.text = startText;
 	}
 
 
