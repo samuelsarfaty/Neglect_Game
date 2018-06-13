@@ -2587,7 +2587,16 @@ Prefab:
     - target: {fileID: 198602716209835516, guid: ebf228042f5895247afd87b574940c50,
         type: 2}
       propertyPath: randomSeed
-      value: -1479135578
+      value: 1247472802
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864841487033700, guid: ebf228042f5895247afd87b574940c50, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198602716209835516, guid: ebf228042f5895247afd87b574940c50,
+        type: 2}
+      propertyPath: moveWithTransform
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ebf228042f5895247afd87b574940c50, type: 2}
@@ -3984,7 +3993,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 03320b101c070ef4893ef6f5ed21c426, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4067,6 +4076,10 @@ Prefab:
         type: 2}
       propertyPath: CollisionModule.m_Bounce.scalar
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186318546010226, guid: 24f160ed1d679264491e9f0b3339e815, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24f160ed1d679264491e9f0b3339e815, type: 2}

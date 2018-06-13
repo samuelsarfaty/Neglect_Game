@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 public class Water : MonoBehaviour {
 
 	void OnParticleCollision (GameObject other){
-		if (other.GetComponent<FloorPiece>()) {
+		/*if (other.GetComponent<FloorPiece>()) {
 			print ("water fell");
 			print (other.name);
-		}
+		}*/
 
 		if (other.GetComponent<Mill> ()) {
 			Mill myMill = other.GetComponent<Mill> ();
