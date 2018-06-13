@@ -9,17 +9,21 @@ public class Mill : MonoBehaviour {
 	public HouseMill houseMill;
 
 	private BoxCollider myCollider;
+	private AudioSource source;
+	private BoxCollider myCol;
 
 
 	void Awake(){
 		isRotating = false;
 		myCollider = GetComponent<BoxCollider> ();
+		source = GetComponent<AudioSource> ();
+		myCol = GetComponent<BoxCollider> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (isRotating) {
-			transform.Rotate (Vector3.left, rotationSpeed * Time.deltaTime);
+			transform.Rotate (Vector3.left, rotationSpeed * Time.deltaTime); //Only run this after ActivateMill() has been called
 
 			if (!houseMill.isActivated) {
 				houseMill.Activate ();
@@ -35,12 +39,14 @@ public class Mill : MonoBehaviour {
 		myCollider.isTrigger = false;
 		houseMill.isActivated = false;
 		houseMill.DeActivate ();
+		source.Stop ();
 
 	}
 
-	void MoveMill(){
-		transform.Rotate (Vector3.left, rotationSpeed * Time.deltaTime);
-		GetComponent<BoxCollider> ().isTrigger = true;
+	public void ActivateMill(){
+		myCol.isTrigger = true;
+		source.Play ();
+		isRotating = true;
 	}
 
 }

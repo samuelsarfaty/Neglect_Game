@@ -41,12 +41,14 @@ public class StartButton : MonoBehaviour {
 		water.gameObject.SetActive (true);
 		isWaterActive = true;
 		buttonText.text = stopText;
+
 	}
 
 	void StopWater(){
 		water.gameObject.SetActive (false);
 		isWaterActive = false;
 		buttonText.text = startText;
+		water.hasSplashed = false;
 	}
 
 
