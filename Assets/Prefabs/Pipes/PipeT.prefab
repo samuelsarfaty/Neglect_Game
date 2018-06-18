@@ -135,4 +135,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22792a6dc8e3d974791ad24186a09b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animDuration: 0.3
+  spawnDuration: 0.3
+  rotationDuration: 0.3

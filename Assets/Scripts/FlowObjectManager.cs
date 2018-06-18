@@ -17,7 +17,7 @@ public class FlowObjectManager : MonoBehaviour {
 			GameObject obj = Instantiate (myObject, spawnPos, Quaternion.identity);
 			obj.transform.parent = this.transform;
 			objectsList.Add (obj);
-			obj.gameObject.SetActive (false);
+			//obj.gameObject.SetActive (false);
 
 		}
 	}
