@@ -22,12 +22,14 @@ public class HouseMill : MonoBehaviour {
 	}
 
 	public void Activate(){
+		isActivated = true;
 		myRenderer.materials[2].color = Color.yellow;
 		smoke.gameObject.SetActive (true);
 
 	}
 
 	public void DeActivate(){
+		isActivated = false;
 		myRenderer.materials [2].color = Color.black;
 		smoke.gameObject.SetActive (false);
 	}

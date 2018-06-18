@@ -26,8 +26,9 @@ public class Mill : MonoBehaviour {
 			transform.Rotate (Vector3.left, rotationSpeed * Time.deltaTime); //Only run this after ActivateMill() has been called
 
 			if (!houseMill.isActivated) {
-				houseMill.Activate ();
-				houseMill.isActivated = true;
+				//houseMill.Activate ();
+				houseMill.Invoke ("Activate", 1);
+				//houseMill.isActivated = true;
 			}
 		}
 			
@@ -37,7 +38,7 @@ public class Mill : MonoBehaviour {
 		isRotating = false;
 		transform.rotation = Quaternion.Euler (Vector3.zero);
 		myCollider.isTrigger = false;
-		houseMill.isActivated = false;
+		//houseMill.isActivated = false;
 		houseMill.DeActivate ();
 		source.Stop ();
 
