@@ -9,20 +9,20 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1073626974343454}
+  m_RootGameObject: {fileID: 1965842182860230}
   m_IsPrefabParent: 1
---- !u!1 &1073626974343454
+--- !u!1 &1139845906277210
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4328962029359184}
-  - component: {fileID: 33923281130991234}
-  - component: {fileID: 23603304805522180}
-  - component: {fileID: 114178464895207858}
-  - component: {fileID: 64950678544584386}
+  - component: {fileID: 4380859829487750}
+  - component: {fileID: 33769180429115276}
+  - component: {fileID: 23048686737161236}
+  - component: {fileID: 114579316161380284}
+  - component: {fileID: 64111532203072620}
   m_Layer: 0
   m_Name: PipeCurveLP
   m_TagString: Untagged
@@ -30,25 +30,54 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4328962029359184
+--- !u!1 &1965842182860230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4884089304838462}
+  m_Layer: 0
+  m_Name: PipeCurve
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4380859829487750
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1073626974343454}
+  m_GameObject: {fileID: 1139845906277210}
   m_LocalRotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.396172, y: 2.25, z: 21.74}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 200, y: 200, z: 200}
   m_Children: []
+  m_Father: {fileID: 4884089304838462}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4884089304838462
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1965842182860230}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4380859829487750}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23603304805522180
+--- !u!23 &23048686737161236
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1073626974343454}
+  m_GameObject: {fileID: 1139845906277210}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 1
@@ -74,19 +103,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33923281130991234
+--- !u!33 &33769180429115276
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1073626974343454}
+  m_GameObject: {fileID: 1139845906277210}
   m_Mesh: {fileID: 4300000, guid: 13820a21560c9154f9eaf3e382136fc2, type: 3}
---- !u!64 &64950678544584386
+--- !u!64 &64111532203072620
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1073626974343454}
+  m_GameObject: {fileID: 1139845906277210}
   m_Material: {fileID: 13400000, guid: 492b0e5082c48b9448901b3704ba576b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -95,14 +124,15 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 13820a21560c9154f9eaf3e382136fc2, type: 3}
---- !u!114 &114178464895207858
+--- !u!114 &114579316161380284
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1073626974343454}
+  m_GameObject: {fileID: 1139845906277210}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22792a6dc8e3d974791ad24186a09b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animDuration: 0.3
