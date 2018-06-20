@@ -2867,7 +2867,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1527767484768594, guid: fec141fa212e1204fb6c98da2c05b602, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224318670148070318, guid: fec141fa212e1204fb6c98da2c05b602,
         type: 2}
@@ -2877,7 +2877,7 @@ Prefab:
     - target: {fileID: 224337619790750588, guid: fec141fa212e1204fb6c98da2c05b602,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 465.8
+      value: 375.6
       objectReference: {fileID: 0}
     - target: {fileID: 224337619790750588, guid: fec141fa212e1204fb6c98da2c05b602,
         type: 2}
@@ -2887,6 +2887,16 @@ Prefab:
     - target: {fileID: 1072321278939966, guid: fec141fa212e1204fb6c98da2c05b602, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224120985604728680, guid: fec141fa212e1204fb6c98da2c05b602,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 462.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224120985604728680, guid: fec141fa212e1204fb6c98da2c05b602,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 23.400024
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fec141fa212e1204fb6c98da2c05b602, type: 2}
@@ -3301,6 +3311,11 @@ Prefab:
       propertyPath: panel
       value: 
       objectReference: {fileID: 1932898965}
+    - target: {fileID: 198602716209835516, guid: ebf228042f5895247afd87b574940c50,
+        type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ebf228042f5895247afd87b574940c50, type: 2}
   m_IsPrefabParent: 0
