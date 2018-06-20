@@ -6,6 +6,7 @@ TagManager:
   tags:
   - WaterTrigger
   - SelectionEffect
+  - WaterPath
   layers:
   - Default
   - TransparentFX

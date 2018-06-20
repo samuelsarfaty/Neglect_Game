@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PipeButton : MonoBehaviour {
 
@@ -15,11 +16,19 @@ public class PipeButton : MonoBehaviour {
 		selectionFrame = GetComponentInChildren<SelectionFrame> ().gameObject;
 		buttons = GameObject.FindObjectsOfType<PipeButton> ();
 		isSelected = false;
+
 	}
 
 	// Use this for initialization
 	void Start () {
 		DeSelect ();
+
+	}
+
+	void Update(){
+		if (isSelected) {
+			Vector3 temp = Input.mousePosition;
+		}
 	}
 	
 	public void Select(){
